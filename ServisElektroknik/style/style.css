@@ -1,0 +1,671 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Preconnet, sans-serif;
+
+}
+
+
+body {
+  min-height: 100vh;
+  background-color: #f5fdff9e;
+  animation: animasi 1s ease-in-out;
+
+}
+
+/* NAVBAR */
+header {
+  position: fixed;
+  width: 100%;
+  min-height: 30px;
+  background-color: white;
+  padding: 5px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 11px 0px rgba(153, 149, 149, 1);
+  z-index: 99999;
+}
+
+header .logo img {
+height: 35px;
+}
+
+
+
+header ul {
+  position: relative;
+  display: inline-block;
+  display: flex;
+justify-content: flex-end;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+  font-size: 14px;
+
+  
+}
+
+header ul li b {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+header ul li a {
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul li a:hover {
+  background-color: rgba(18, 175, 184, 0.381);
+}
+
+header ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: white;
+  display: none;
+  border-radius: 5%;
+  box-shadow: 0px 2px 11px 0px rgba(153, 149, 149, 1);
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul li {
+  position: relative;
+  width: 100%;
+}
+
+
+/* JUMBOTRON */
+#home .jumbotron {
+  padding: 0 100px 0 100px;
+}
+
+#home .jumbotron .title {
+  display: flex;
+  height: 530px;
+  font-size: 20px;
+  text-align: left;
+}
+
+#home .jumbotron .title-content2 {
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto;
+}
+
+#home .jumbotron h1 {
+  color: #213c8f;
+}
+
+#home #konten {
+  background-color: #f5fdff9e;
+}
+
+body main {
+  padding-top: 100px;
+
+
+}
+
+/* ABOUT */
+#home section #tentang .ket {
+  text-align: center;
+  padding-top: 70px;
+}
+
+#home section #tentang .ket h2 {
+  margin: 15px;
+  font-size: 30px;
+  color: #387186;
+}
+
+#home section #tentang .ket p {
+  font-size: 15px;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  color: #000000;
+}
+
+#home section #unggul h2 {
+  margin: 40px;
+  font-size: 30px;
+  text-align: center;
+  color: #387186;
+}
+
+#home section #unggul ul li {
+  background-color: white;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  padding: 25px;
+  text-align: center;
+  border: 0px solid #d0d0d0;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 32px -26px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 32px -26px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 32px -26px rgba(0, 0, 0, 1);
+  padding: 20px;
+  margin: 15px;
+  
+
+}
+
+#home section #unggul.animasiUnggul ul li {
+    animation: animasi 1s ease-in-out;
+}
+
+@keyframes animasi {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#home section #unggul ul li h4 {
+  font-size: 12px;
+  color: #003c50;
+}
+
+#home section #unggul ul li img {
+  margin-bottom: 7px;
+}
+
+
+/* TEKNISI */
+#home .konten3 #teknisi {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: #b4d4ff;
+}
+
+#home .konten3 #teknisi ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 10px;
+}
+
+#home .konten3 #teknisi h2 {
+  margin: 40px;
+  font-size: 30px;
+  text-align: center;
+  color: WHITE;
+}
+
+#home .konten3 #teknisi ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border: 3px solid #176b87;
+  border-radius: 10%;
+  margin: 20px;
+  background-color: #eef5ff;
+  box-shadow: 10px 10px 35px -16px rgba(0, 0, 0, 0.75);
+}
+
+#home .konten3 #teknisi ul li h4 {
+  margin: 15px;
+  color: #176b87;
+}
+
+/* CONTACT */
+#hubungi {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+.submit {
+  width: 45%;
+  background-color: #baefff;
+  padding: 30px;
+  color: #215b95;
+}
+
+.submit h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 16px;
+  color: #0066cc;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b3ccff;
+  border-radius: 5px;
+  background-color: #f5feff;
+}
+
+button {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0352a1; 
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background-color: #6689cb;
+  padding: 30px;
+  box-shadow: 0px 0px 24px -6px rgba(0, 0, 0, 0.75);
+}
+
+.bio h2 {
+  color: #dcf2f9;
+}
+
+.bio img {
+  margin: 20px;
+  padding: 3px;
+  align-items: center;
+  border-radius: 50%;
+  width: 150px;
+  border: 3px solid #7cc9da;
+  box-shadow: 10px 10px 25px -12px rgba(0, 0, 0, 0.75);
+}
+
+.bio td {
+  font-size: 16px;
+  color: #dcf2f9;
+  padding: 7px 13px;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #19315d;
+  color: white;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+footer .footer ul li {
+  display: inline-block;
+  margin: 20px 10px;
+  text-align: left;
+  font-size: 12px;
+}
+footer .footer ul li ul li {
+  display: block;
+  list-style: none;
+}
+
+footer .footer ul li ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+footer .credit {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px #0000004d;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+/* <===== Sevice Page =====> */
+
+/* Title */
+main .judul h1 {
+  text-align: center;
+  margin: 30px;
+  color: #213c8f;
+}
+
+main .judul p {
+  font-size: 15px;
+  padding: 20px;
+  max-width: 700px;
+  color: #28314e;
+  text-align: center;
+  margin: -10px auto 30px;
+}
+
+/* Form */
+main .service-form {
+  margin: auto;
+  width: 90%;
+}
+
+
+main .service-form .form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: #d6f6fd;
+  padding: 20px;
+  margin: auto;
+}
+
+main .service-form .form label {
+  margin: 10px;
+}
+main .service-form .form select {
+  margin: 0 0 15px 10px;
+  width: 100px;
+}
+
+main .service-form .form #message, 
+main .service-form .form input {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: white;
+
+}
+
+input[type="file"] {
+  border: none;
+}
+
+main .service-form .form button {
+  width: 100px;
+  margin: 10px auto;
+  box-shadow:#00000053 0px 0px 14px;
+}
+
+/* RESPONSIIVE */
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 10px 20px;
+    
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+    left: 0;
+    background-color: white;
+    display: none;
+  }
+  header.active{
+    animation: animasi 0s ease-in-out;
+
+  }
+  header.active nav {
+    display: initial;
+  }
+  header nav ul {
+    animation: animasi 0.3s ease-in-out;
+
+  }
+  header nav ul li {
+    width: 100%;
+  }
+  header nav ul li ul {
+    position: relative;
+    width: 100%;
+
+  }
+
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .menuToggle::before {
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    box-shadow: 0 24px black;
+  }
+  
+  .menuToggle::after {
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: translateY(12px);
+  }
+
+  header.active .menuToggle::before {
+    margin: 20px;
+    transform: rotate(45deg);
+    box-shadow: 0 0;
+  }
+
+  header.active .menuToggle::after {
+    margin: 20px;
+    transform: rotate(315deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* HEADER */
+  header {
+    padding: 5px 20px;
+    min-height: 20px;
+  }
+
+  header .logo {
+    font-size: 0.1em;
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: -7px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 2px 11px 0px rgba(153, 149, 149, 1);
+    overflow-y: auto;
+  }
+
+  header .menuToggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  header ul li {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  header ul li a {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  header .menuToggle.active + ul {
+    display: block;
+  }
+
+  /* JUMBOTRON */
+  #home .jumbotron {
+    padding: 50px;
+  }
+
+  #home .jumbotron .title {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  #home .jumbotron .title-content1 {
+    margin-bottom: 20px;
+  }
+
+  #home .jumbotron .title-content2 {
+    margin: 20px 0;
+  }
+
+  #home .jumbotron h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  #home .jumbotron p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  #home .jumbotron img {
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ABOUT */
+
+  #home section #tentang .ket h2,
+  #home section  #unggul h2{
+    font-size: 23px;
+    margin-bottom: -20px;
+  }
+
+  #home section #tentang .ket p {
+    padding: 50px;
+  }
+
+  #home section #unggul ul li {
+    width: 120px;
+    height: 120px;
+  }
+
+  #home section #unggul ul li img {
+    width: 50px;
+  }
+
+  #home section #unggul ul li h4 {
+    font-size: 10px;
+  }
+
+  /* CONTACT */
+  #hubungi {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .submit {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .bio {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .bio img {
+    width: 100px;
+  }
+
+  .bio table {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* FOOTER */
+  footer .footer {
+    padding: 10px;
+  }
+  footer .footer ul li {
+    display: inblock;
+  }
+
+  footer .footer ul li ul li {
+    margin: 10px 0;
+  }
+
+  footer .footer ul li.link,
+  footer .footer ul li.service {
+    display: none;
+  }
+
+  /* Service Form */
+  main .service-form .form {
+    width: 95%;
+  }
+}
